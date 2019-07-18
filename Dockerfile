@@ -52,4 +52,7 @@ RUN cd /aws-azure-login \
 COPY bin /aws-azure-login/bin
 COPY lib /aws-azure-login/lib
 
+
+#ENV DEBUG=aws-azure-login
+
 ENTRYPOINT ["node", "/aws-azure-login/bin", "--no-sandbox"]
